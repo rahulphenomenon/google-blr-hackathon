@@ -1,13 +1,25 @@
 import logging
 
+# Silence all noisy logs before any LiveKit imports
+logging.getLogger("livekit").setLevel(logging.ERROR)
+logging.getLogger("google_genai").setLevel(logging.ERROR)
+logging.getLogger("httpcore").setLevel(logging.ERROR)
+logging.getLogger("httpx").setLevel(logging.ERROR)
+logging.getLogger("asyncio").setLevel(logging.ERROR)
+
 from dotenv import load_dotenv
 from livekit import agents
 from livekit.agents import AgentSession, Agent, AgentServer
 from livekit.plugins import google, sarvam
 
 load_dotenv(".env.local")
-logger = logging.getLogger("tota-agent")
+
+logger = logging.getLogger("tota")
 logger.setLevel(logging.INFO)
+handler = logging.StreamHandler()
+handler.setFormatter(logging.Formatter("%(message)s"))
+logger.addHandler(handler)
+logger.propagate = False
 
 
 class MalayalamTutor(Agent):
@@ -16,10 +28,13 @@ class MalayalamTutor(Agent):
             instructions="""You are a friendly Malayalam language tutor. Your student is an English speaker learning Malayalam.
 
 Rules:
-- Speak primarily in Malayalam, using simple sentences appropriate for a beginner
-- When the student speaks in English, respond in Malayalam with a translation
-- When the student speaks in Malayalam, acknowledge what they said, correct any mistakes gently, and continue the conversation
-- If the student asks for help or says they don't understand, explain briefly in English, then repeat in Malayalam
+- ALWAYS write Malayalam words in Malayalam script (e.g. നമസ്കാരം), NEVER in Latin/English transliteration (e.g. never write "namaskaram")
+- You can mix English and Malayalam in your responses. Use English for explanations and Malayalam script for the Malayalam parts
+- Example good response: "Very good! നിങ്ങൾ നന്നായി പറഞ്ഞു means you said it well"
+- Example bad response: "Very good! Ningal nannaayi paranju means you said it well"
+- When the student speaks in English, teach them the Malayalam equivalent using Malayalam script
+- When the student speaks in Malayalam, acknowledge it, correct mistakes gently, and continue
+- If the student asks for help, explain in English and give the Malayalam in Malayalam script
 - Keep responses short (1-2 sentences) for natural conversation flow
 - Be encouraging and patient
 - Do not use emojis, asterisks, or markdown formatting""",
@@ -36,7 +51,6 @@ server = AgentServer()
 
 @server.rtc_session()
 async def entrypoint(ctx: agents.JobContext):
-    logger.info(f"User connected to room: {ctx.room.name}")
     session = AgentSession(
         stt=sarvam.STT(
             language="unknown",
@@ -54,22 +68,23 @@ async def entrypoint(ctx: agents.JobContext):
         turn_detection="stt",
         min_endpointing_delay=0.07,
     )
+
     @session.on("user_input_transcribed")
     def on_transcript(ev):
         if ev.is_final:
-            logger.info(f"[STT] User said: {ev.transcript}")
-
-    @session.on("agent_state_changed")
-    def on_agent_state(ev):
-        logger.info(f"[Agent] {ev.old_state} → {ev.new_state}")
+            logger.info(f"[STT ] {ev.transcript}")
 
     @session.on("conversation_item_added")
     def on_conversation_item(ev):
         msg = ev.item
-        if hasattr(msg, "role") and hasattr(msg, "text_content"):
-            text = msg.text_content()
-            if text:
-                logger.info(f"[{msg.role.upper()}] {text}")
+        try:
+            role = getattr(msg, "role", None)
+            text = getattr(msg, "text_content", None)
+            if role and text:
+                label = "USER" if role == "user" else "LLM "
+                logger.info(f"[{label}] {text}")
+        except Exception:
+            pass
 
     await session.start(agent=MalayalamTutor(), room=ctx.room)
 
