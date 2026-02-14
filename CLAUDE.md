@@ -21,18 +21,14 @@ xcodebuild -project tota/tota.xcodeproj -scheme tota -sdk iphonesimulator test
 
 The project is best developed in Xcode (`open tota/tota.xcodeproj`).
 
-## Architecture
 
-- **Entry point**: `tota/tota/totaApp.swift` — `@main` App struct using `WindowGroup`
-- **Views**: `tota/tota/ContentView.swift` — root SwiftUI view
-- **Assets**: `tota/tota/Assets.xcassets/`
 
 ## Swift Configuration
 
 - Swift 5.0 with **Swift Approachable Concurrency** enabled
 - Default actor isolation: `MainActor`
 - `SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY` enabled
-- Deployment target: iOS 26.2
+- Deployment target: iOS 26
 - Xcode 26.2
 
 ## Notes

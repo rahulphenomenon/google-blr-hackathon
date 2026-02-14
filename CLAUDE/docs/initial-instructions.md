@@ -1,0 +1,41 @@
+# initial instructions
+
+i am about to start a hackathon. the project i want to build is an ios app that helps users learn languages. the way i differentiate my app is i want to optimize for users to start speaking the language as soon as possible. 
+
+- lessons are audio first
+- this version of the app will be tailored for english speakers to learn the following indian languages - hindi, kannada, tamil, telugu, and malayalam
+    - as of now this is the rough structure i am thinking for my app
+    - “today” tab that contains daily challenge and today’s lesson
+    - “learn” tab that has “lessons” and “vocabulary”
+    - “practice” where users can chat with an ai agent. you can practice a scenario or have a free flowing conversation. you could also describe what you want to have a conversation about. when you start a conversation you see a ui similar to google meet with text of what the model said and options to translate/get an answer
+    - “stats” which has streak, language score(based on how much of the learn tab you have completed) and other analytics
+    - the top nav will have settings and streak
+    - the onboarding for now will only hav 2 screens - language you are familiar with (hardcoded to english for now) and language you want to learn (choose)
+- the app that is my strongest source of inspiration in pingo.ai
+- to start off i only want to build out malayalam functionality (as i understand it and i can test it). i then need to build out kannada as that is what the judges can test. finally i will move on to the other languages, which should be quick if the base built for the other two are solid
+- tech stack
+    - i will use gemini3 for all text model needs. could be flash or pro
+    - i will use sarvam.ai’s bulbul for speech to text needs.
+    - convex for the backend
+    - i will be using the livekit framework for building voice agents, which should handle the conversational agents. this is a framework for user → stt → model response → tts
+- general guidelines
+    - the app should be aesthetically pleasing. it should be minimalistic but with a consistent design language. small case letters everywhere. i will set the brand color. we need to native iOS components as much as possible
+    - the app should be performant. it should feel snappy
+    - it should be secure.
+    - i should interface with the gemini and sarvam api’s per best practices
+    - the app should have
+    - maintain some documents to keep track of your work. create a [scratchpad.md](http://scratchpad.md) file where you keep track of all the work you did and decisions you made. keep a [lessons.md](http://lessons.md) file where write down learnings from the feedback i give so you don’t keep making the same mistakes.
+- order of operations
+    - first i want to get a poc working. this will be getting a livekit agent working with sarvam and gemini. you can reference this and basically just implement it - [https://github.com/livekit-examples/agent-starter-swift](https://github.com/livekit-examples/agent-starter-swift), this will ensure we have things configured correctly. once this is setup we can build the actual app from scratch
+    - write a full fleshed spec with learnings from poc
+    - once the poc is built build the “practice” functionality since that is closest in functionality to the poc
+    - then get lessons functional. this will require preparing the content and building the functionality
+    - then get today tab functional
+    - then settings
+    - final onboarding and polish like splash screen and logo
+- claude instructions
+    - first spec this out. ask me questions to clarify.
+    - once this is fully specced out build the poc
+    - once the poc is built build the actual app. before implementation write a technical spec with learnings from poc implementation
+    - throughout update CLAUDE.md, [learnings.md](http://learnings.md), and scratchpad.md
+    - ensure code is DRY and production grade with graceful error states, warrnings, etc. the app should be secure and reliable as i will eventually transform this into a production grade app
