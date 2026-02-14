@@ -21,38 +21,31 @@ handler.setFormatter(logging.Formatter("%(message)s"))
 logger.addHandler(handler)
 logger.propagate = False
 
+# --- Language / Scenario / Voice config ---
 
-class MalayalamTutor(Agent):
-    def __init__(self) -> None:
-        super().__init__(
-            instructions="""You are a friendly Malayalam language tutor. Your student is an English speaker learning Malayalam.
+LANGUAGE_NAMES = {
+    "ml-IN": "Malayalam",
+    "kn-IN": "Kannada",
+    "hi-IN": "Hindi",
+    "ta-IN": "Tamil",
+    "te-IN": "Telugu",
+}
 
-Rules:
-- ALWAYS write Malayalam words in Malayalam script (e.g. നമസ്കാരം), NEVER in Latin/English transliteration (e.g. never write "namaskaram")
-- You can mix English and Malayalam in your responses. Use English for explanations and Malayalam script for the Malayalam parts
-- Example good response: "Very good! നിങ്ങൾ നന്നായി പറഞ്ഞു means you said it well"
-- Example bad response: "Very good! Ningal nannaayi paranju means you said it well"
-- When the student speaks in English, teach them the Malayalam equivalent using Malayalam script
-- When the student speaks in Malayalam, acknowledge it, correct mistakes gently, and continue
-- If the student asks for help, explain in English and give the Malayalam in Malayalam script
-- Keep responses short (1-2 sentences) for natural conversation flow
-- Be encouraging and patient
-- Do not use emojis, asterisks, or markdown formatting""",
-        )
+SCENARIO_PROMPTS = {
+    "basics": "Focus on basic phrases: greetings (hello, goodbye, how are you), thank you, please, yes, no, numbers 1-10, and essential everyday words. Teach one phrase at a time.",
+    "free": "",
+    "restaurant": "The conversation takes place at a restaurant. Focus on food ordering, menu items, and polite requests.",
+    "directions": "The conversation is about asking for directions. Focus on direction words, landmarks, and transport.",
+    "shopping": "The conversation takes place at a market. Focus on prices, bargaining, numbers, and common goods.",
+    "introductions": "The conversation is about meeting someone new. Focus on greetings, names, where you're from, and occupations.",
+}
 
-    async def on_enter(self):
-        await self.session.generate_reply(
-            instructions="Greet the user warmly in Malayalam, then briefly in English. Introduce yourself as their Malayalam tutor."
-        )
 
+# --- Sarvam STT patch for saaras:v3 verbatim mode ---
+# The released plugin (1.4.x) doesn't support mode= or saaras:v3.
+# This patch adds the mode param to the websocket URL.
 
 def _patch_sarvam_stt_for_mode(mode: str = "verbatim") -> None:
-    """Patch the Sarvam STT plugin to support mode= on saaras:v3.
-
-    The released plugin routes saaras:v3 to the translate endpoint and
-    doesn't pass a mode parameter. This patches the URL builder to use
-    the transcription endpoint with the specified mode.
-    """
     import livekit.plugins.sarvam.stt as sarvam_stt
 
     _original_build_url = sarvam_stt._build_websocket_url
@@ -82,20 +75,56 @@ def _make_stt() -> sarvam.STT:
     return stt
 
 
+# --- Agent ---
+
+class LanguageTutor(Agent):
+    def __init__(self, language="ml-IN", scenario="free", voice="kavya"):
+        lang_name = LANGUAGE_NAMES.get(language, "Malayalam")
+        scenario_context = SCENARIO_PROMPTS.get(scenario, "")
+
+        super().__init__(
+            instructions=f"""You are a friendly {lang_name} language tutor. Your student is an English speaker learning {lang_name}.
+
+Rules:
+- ALWAYS write {lang_name} words in {lang_name} script, NEVER in Latin/English transliteration
+- You can mix English and {lang_name} in your responses. Use English for explanations and {lang_name} script for the {lang_name} parts
+- When the student speaks in English, teach them the {lang_name} equivalent using {lang_name} script
+- When the student speaks in {lang_name}, acknowledge it, correct mistakes gently, and continue
+- If the student asks for help, explain in English and give the {lang_name} in {lang_name} script
+- Keep responses short (1-2 sentences) for natural conversation flow
+- Be encouraging and patient
+- Do not use emojis, asterisks, or markdown formatting
+{f"\nScenario: {scenario_context}" if scenario_context else ""}""",
+        )
+        self._lang_name = lang_name
+
+    async def on_enter(self):
+        await self.session.generate_reply(
+            instructions=f"Greet the user warmly in {self._lang_name}, then briefly in English. Introduce yourself as their {self._lang_name} tutor."
+        )
+
+
 server = AgentServer()
 
 
 @server.rtc_session()
 async def entrypoint(ctx: agents.JobContext):
+    await ctx.connect()
+    participant = await ctx.wait_for_participant()
+
+    language = participant.attributes.get("language", "ml-IN")
+    scenario = participant.attributes.get("scenario", "free")
+    voice = participant.attributes.get("voice", "kavya")
+
+    logger.info(f"[CONFIG] language={language} scenario={scenario} voice={voice}")
+
     session = AgentSession(
         stt=_make_stt(),
-        llm=google.LLM(
-            model="gemini-3-flash-preview",
-        ),
+        llm=google.LLM(model="gemini-3-flash-preview"),
         tts=sarvam.TTS(
-            target_language_code="ml-IN",
+            target_language_code=language,
             model="bulbul:v3",
-            speaker="kavya",
+            speaker=voice,
         ),
         turn_detection="stt",
         min_endpointing_delay=0.07,
@@ -118,7 +147,10 @@ async def entrypoint(ctx: agents.JobContext):
         except Exception:
             pass
 
-    await session.start(agent=MalayalamTutor(), room=ctx.room)
+    await session.start(
+        agent=LanguageTutor(language=language, scenario=scenario, voice=voice),
+        room=ctx.room,
+    )
 
 
 if __name__ == "__main__":

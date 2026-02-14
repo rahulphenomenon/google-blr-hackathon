@@ -1,18 +1,24 @@
-import LiveKit
-import LiveKitComponents
 import SwiftUI
 
 @main
 struct totaApp: App {
-    private let session = Session(
-        tokenSource: SandboxTokenSource(id: POCConfig.sandboxID).cached()
-    )
-
     var body: some Scene {
         WindowGroup {
-            POCView()
-                .environmentObject(session)
-                .environmentObject(LocalMedia(session: session))
+            TabView {
+                Tab("practice", systemImage: "mic.fill") {
+                    PracticeTab()
+                }
+                Tab("learn", systemImage: "book.fill") {
+                    Text("coming soon")
+                }
+                Tab("today", systemImage: "calendar") {
+                    Text("coming soon")
+                }
+                Tab("stats", systemImage: "chart.bar.fill") {
+                    Text("coming soon")
+                }
+            }
+            .tint(Theme.brand)
         }
     }
 }

@@ -1,5 +1,5 @@
 import Foundation
 
 enum POCConfig {
-    static let sandboxID = Bundle.main.object(forInfoDictionaryKey: "LiveKitSandboxId") as? String ?? ""
+    static let sandboxID = AppConfig.sandboxID
 }

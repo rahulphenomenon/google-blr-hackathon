@@ -10,9 +10,14 @@ struct POCView: View {
         ZStack {
             if session.isConnected {
                 VStack(spacing: 0) {
-                    POCAgentView()
-                    POCTranscriptView()
-                    POCControlBar()
+                    AgentVisualizerView()
+                    TranscriptView()
+                    SessionControlBar {
+                        Task {
+                            await session.end()
+                            session.restoreMessageHistory([])
+                        }
+                    }
                 }
             } else {
                 startView()
