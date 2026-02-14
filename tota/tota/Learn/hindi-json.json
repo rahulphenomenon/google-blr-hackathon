@@ -1,0 +1,361 @@
+{
+  "language": "Hindi",
+  "metadata": {
+    "total_words": 50,
+    "total_phrases": 20
+  },
+  "words": [
+    {
+      "english_term": "I",
+      "native_term": "मैं",
+      "transliteration": "Main"
+    },
+    {
+      "english_term": "You (Formal)",
+      "native_term": "आप",
+      "transliteration": "Aap"
+    },
+    {
+      "english_term": "You (Informal)",
+      "native_term": "तुम",
+      "transliteration": "Tum"
+    },
+    {
+      "english_term": "Yes",
+      "native_term": "हाँ",
+      "transliteration": "Haan"
+    },
+    {
+      "english_term": "No",
+      "native_term": "नहीं",
+      "transliteration": "Nahi"
+    },
+    {
+      "english_term": "Hello",
+      "native_term": "नमस्ते",
+      "transliteration": "Namaste"
+    },
+    {
+      "english_term": "Water",
+      "native_term": "पानी",
+      "transliteration": "Paani"
+    },
+    {
+      "english_term": "Food",
+      "native_term": "खाना",
+      "transliteration": "Khaana"
+    },
+    {
+      "english_term": "Tea",
+      "native_term": "चाय",
+      "transliteration": "Chai"
+    },
+    {
+      "english_term": "Home",
+      "native_term": "घर",
+      "transliteration": "Ghar"
+    },
+    {
+      "english_term": "Shop",
+      "native_term": "दुकान",
+      "transliteration": "Dukaan"
+    },
+    {
+      "english_term": "Money",
+      "native_term": "पैसे",
+      "transliteration": "Paise"
+    },
+    {
+      "english_term": "Time",
+      "native_term": "Time",
+      "transliteration": "Time"
+    },
+    {
+      "english_term": "Today",
+      "native_term": "आज",
+      "transliteration": "Aaj"
+    },
+    {
+      "english_term": "Tomorrow/Yesterday",
+      "native_term": "कल",
+      "transliteration": "Kal"
+    },
+    {
+      "english_term": "Bus",
+      "native_term": "Bus",
+      "transliteration": "Bus"
+    },
+    {
+      "english_term": "Train",
+      "native_term": "Train",
+      "transliteration": "Train"
+    },
+    {
+      "english_term": "Ticket",
+      "native_term": "Ticket",
+      "transliteration": "Ticket"
+    },
+    {
+      "english_term": "Phone",
+      "native_term": "Phone",
+      "transliteration": "Phone"
+    },
+    {
+      "english_term": "Doctor",
+      "native_term": "Doctor",
+      "transliteration": "Doctor"
+    },
+    {
+      "english_term": "Here",
+      "native_term": "यहाँ",
+      "transliteration": "Yahan"
+    },
+    {
+      "english_term": "There",
+      "native_term": "वहाँ",
+      "transliteration": "Wahan"
+    },
+    {
+      "english_term": "Where",
+      "native_term": "कहाँ",
+      "transliteration": "Kahan"
+    },
+    {
+      "english_term": "What",
+      "native_term": "क्या",
+      "transliteration": "Kya"
+    },
+    {
+      "english_term": "Why",
+      "native_term": "क्यों",
+      "transliteration": "Kyun"
+    },
+    {
+      "english_term": "When",
+      "native_term": "कब",
+      "transliteration": "Kab"
+    },
+    {
+      "english_term": "How",
+      "native_term": "कैसे",
+      "transliteration": "Kaise"
+    },
+    {
+      "english_term": "Who",
+      "native_term": "कौन",
+      "transliteration": "Kaun"
+    },
+    {
+      "english_term": "Good",
+      "native_term": "अच्छा",
+      "transliteration": "Accha"
+    },
+    {
+      "english_term": "Bad",
+      "native_term": "खराब",
+      "transliteration": "Kharaab"
+    },
+    {
+      "english_term": "Big",
+      "native_term": "बड़ा",
+      "transliteration": "Bada"
+    },
+    {
+      "english_term": "Small",
+      "native_term": "छोटा",
+      "transliteration": "Chota"
+    },
+    {
+      "english_term": "Hot",
+      "native_term": "गर्म",
+      "transliteration": "Garm"
+    },
+    {
+      "english_term": "Cold",
+      "native_term": "ठंडा",
+      "transliteration": "Thanda"
+    },
+    {
+      "english_term": "To stop",
+      "native_term": "रुकना",
+      "transliteration": "Rukna"
+    },
+    {
+      "english_term": "To go",
+      "native_term": "जाना",
+      "transliteration": "Jaana"
+    },
+    {
+      "english_term": "To come",
+      "native_term": "आना",
+      "transliteration": "Aana"
+    },
+    {
+      "english_term": "To eat",
+      "native_term": "खाना",
+      "transliteration": "Khaana"
+    },
+    {
+      "english_term": "To drink",
+      "native_term": "पीना",
+      "transliteration": "Peena"
+    },
+    {
+      "english_term": "To sleep",
+      "native_term": "सोना",
+      "transliteration": "Sona"
+    },
+    {
+      "english_term": "Friend",
+      "native_term": "दोस्त",
+      "transliteration": "Dost"
+    },
+    {
+      "english_term": "Mother",
+      "native_term": "माँ",
+      "transliteration": "Maa"
+    },
+    {
+      "english_term": "Father",
+      "native_term": "पापा",
+      "transliteration": "Papa"
+    },
+    {
+      "english_term": "Brother",
+      "native_term": "भैया",
+      "transliteration": "Bhaiya"
+    },
+    {
+      "english_term": "Sister",
+      "native_term": "दीदी",
+      "transliteration": "Didi"
+    },
+    {
+      "english_term": "Name",
+      "native_term": "नाम",
+      "transliteration": "Naam"
+    },
+    {
+      "english_term": "Market",
+      "native_term": "Market",
+      "transliteration": "Market"
+    },
+    {
+      "english_term": "Police",
+      "native_term": "Police",
+      "transliteration": "Police"
+    },
+    {
+      "english_term": "Bathroom",
+      "native_term": "Bathroom",
+      "transliteration": "Bathroom"
+    },
+    {
+      "english_term": "Help",
+      "native_term": "मदद",
+      "transliteration": "Madad"
+    }
+  ],
+  "phrases": [
+    {
+      "english_term": "How are you?",
+      "native_term": "आप कैसे हैं?",
+      "transliteration": "Aap kaise hain?"
+    },
+    {
+      "english_term": "I am fine.",
+      "native_term": "मैं ठीक हूँ।",
+      "transliteration": "Main theek hoon."
+    },
+    {
+      "english_term": "What is your name?",
+      "native_term": "आपका नाम क्या है?",
+      "transliteration": "Aapka naam kya hai?"
+    },
+    {
+      "english_term": "My name is...",
+      "native_term": "मेरा नाम... है।",
+      "transliteration": "Mera naam... hai."
+    },
+    {
+      "english_term": "How much is this?",
+      "native_term": "ये कितने का है?",
+      "transliteration": "Ye kitne ka hai?"
+    },
+    {
+      "english_term": "Where is the bathroom?",
+      "native_term": "Bathroom कहाँ है?",
+      "transliteration": "Bathroom kahan hai?"
+    },
+    {
+      "english_term": "I don't understand.",
+      "native_term": "मैं समझा नहीं।",
+      "transliteration": "Main samjha nahi."
+    },
+    {
+      "english_term": "Do you speak English?",
+      "native_term": "क्या आप English बोलते हैं?",
+      "transliteration": "Kya aap English bolte hain?"
+    },
+    {
+      "english_term": "Please help me.",
+      "native_term": "मेरी मदद कीजिये।",
+      "transliteration": "Meri madad kijiye."
+    },
+    {
+      "english_term": "Excuse me / Listen.",
+      "native_term": "सुनिए।",
+      "transliteration": "Suniye."
+    },
+    {
+      "english_term": "Stop here.",
+      "native_term": "यहाँ रोकिये।",
+      "transliteration": "Yahan rokiye."
+    },
+    {
+      "english_term": "I want water.",
+      "native_term": "मुझे पानी चाहिए।",
+      "transliteration": "Mujhe paani chahiye."
+    },
+    {
+      "english_term": "I am hungry.",
+      "native_term": "मुझे भूख लगी है।",
+      "transliteration": "Mujhe bhook lagi hai."
+    },
+    {
+      "english_term": "It is very good.",
+      "native_term": "बहुत अच्छा है।",
+      "transliteration": "Bahut accha hai."
+    },
+    {
+      "english_term": "I need a taxi/auto.",
+      "native_term": "मुझे Auto चाहिए।",
+      "transliteration": "Mujhe Auto chahiye."
+    },
+    {
+      "english_term": "See you later.",
+      "native_term": "फिर मिलेंगे।",
+      "transliteration": "Phir milenge."
+    },
+    {
+      "english_term": "What time is it?",
+      "native_term": "Time क्या हुआ है?",
+      "transliteration": "Time kya hua hai?"
+    },
+    {
+      "english_term": "Let's go.",
+      "native_term": "चलो चलें।",
+      "transliteration": "Chalo chalein."
+    },
+    {
+      "english_term": "Wait a minute.",
+      "native_term": "एक मिनट रुकिए।",
+      "transliteration": "Ek minute rukiye."
+    },
+    {
+      "english_term": "Sorry.",
+      "native_term": "माफ़ कीजिये।",
+      "transliteration": "Maaf kijiye."
+    }
+  ]
+}

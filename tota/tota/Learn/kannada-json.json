@@ -1,0 +1,366 @@
+{
+  "language": "Kannada",
+  "metadata": {
+    "total_words": 50,
+    "total_phrases": 20
+  },
+  "words": [
+    {
+      "english_term": "I",
+      "native_term": "ನಾನು",
+      "transliteration": "Naanu"
+    },
+    {
+      "english_term": "You (Formal)",
+      "native_term": "ನೀವು",
+      "transliteration": "Neevu"
+    },
+    {
+      "english_term": "You (Informal)",
+      "native_term": "ನೀನು",
+      "transliteration": "Neenu"
+    },
+    {
+      "english_term": "Yes",
+      "native_term": "ಹೌದು",
+      "transliteration": "Haudu"
+    },
+    {
+      "english_term": "No",
+      "native_term": "ಇಲ್ಲ",
+      "transliteration": "Illa"
+    },
+    {
+      "english_term": "Hello",
+      "native_term": "ನಮಸ್ಕಾರ",
+      "transliteration": "Namaskara"
+    },
+    {
+      "english_term": "Water",
+      "native_term": "ನೀರು",
+      "transliteration": "Neeru"
+    },
+    {
+      "english_term": "Food",
+      "native_term": "ಊಟ / ತಿಂಡಿ",
+      "transliteration": "Oota / Tindi"
+    },
+    {
+      "english_term": "Tea",
+      "native_term": "Tea / ಚಹಾ",
+      "transliteration": "Tea / Chaha"
+    },
+    {
+      "english_term": "Home",
+      "native_term": "ಮನೆ",
+      "transliteration": "Mane"
+    },
+    {
+      "english_term": "Shop",
+      "native_term": "ಅಂಗಡಿ",
+      "transliteration": "Angadi"
+    },
+    {
+      "english_term": "Money",
+      "native_term": "ದುಡ್ಡು / ಹಣ",
+      "transliteration": "Duddu / Hana"
+    },
+    {
+      "english_term": "Time",
+      "native_term": "Time / ಸಮಯ",
+      "transliteration": "Time / Samaya"
+    },
+    {
+      "english_term": "Today",
+      "native_term": "ಇವತ್ತು",
+      "transliteration": "Ivattu"
+    },
+    {
+      "english_term": "Tomorrow",
+      "native_term": "ನಾಳೆ",
+      "transliteration": "Naale"
+    },
+    {
+      "english_term": "Yesterday",
+      "native_term": "ನಿನ್ನೆ",
+      "transliteration": "Ninne"
+    },
+    {
+      "english_term": "Bus",
+      "native_term": "Bus",
+      "transliteration": "Bus"
+    },
+    {
+      "english_term": "Train",
+      "native_term": "Train",
+      "transliteration": "Train"
+    },
+    {
+      "english_term": "Ticket",
+      "native_term": "Ticket",
+      "transliteration": "Ticket"
+    },
+    {
+      "english_term": "Phone",
+      "native_term": "Phone",
+      "transliteration": "Phone"
+    },
+    {
+      "english_term": "Doctor",
+      "native_term": "Doctor",
+      "transliteration": "Doctor"
+    },
+    {
+      "english_term": "Here",
+      "native_term": "ಇಲ್ಲಿ",
+      "transliteration": "Illi"
+    },
+    {
+      "english_term": "There",
+      "native_term": "ಅಲ್ಲಿ",
+      "transliteration": "Alli"
+    },
+    {
+      "english_term": "Where",
+      "native_term": "ಎಲ್ಲಿ",
+      "transliteration": "Elli"
+    },
+    {
+      "english_term": "What",
+      "native_term": "ಏನು",
+      "transliteration": "Enu"
+    },
+    {
+      "english_term": "Why",
+      "native_term": "ಏಕೆ / ಯಾಕೆ",
+      "transliteration": "Eke / Yaake"
+    },
+    {
+      "english_term": "When",
+      "native_term": "ಯಾವಾಗ",
+      "transliteration": "Yaavaga"
+    },
+    {
+      "english_term": "How",
+      "native_term": "ಹೇಗೆ",
+      "transliteration": "Hege"
+    },
+    {
+      "english_term": "Who",
+      "native_term": "ಯಾರು",
+      "transliteration": "Yaaru"
+    },
+    {
+      "english_term": "Good",
+      "native_term": "ಒಳ್ಳೆಯ / ಚೆನ್ನಾಗಿದೆ",
+      "transliteration": "Olleya / Chennagide"
+    },
+    {
+      "english_term": "Bad",
+      "native_term": "ಕೆಟ್ಟ",
+      "transliteration": "Ketta"
+    },
+    {
+      "english_term": "Big",
+      "native_term": "ದೊಡ್ಡ",
+      "transliteration": "Dodda"
+    },
+    {
+      "english_term": "Small",
+      "native_term": "ಚಿಕ್ಕ",
+      "transliteration": "Chikka"
+    },
+    {
+      "english_term": "Hot",
+      "native_term": "ಬಿಸಿ",
+      "transliteration": "Bisi"
+    },
+    {
+      "english_term": "Cold",
+      "native_term": "ತಣ್ಣಗೆ",
+      "transliteration": "Thannage"
+    },
+    {
+      "english_term": "To stop",
+      "native_term": "ನಿಲ್ಲಿಸಿ",
+      "transliteration": "Nillisi"
+    },
+    {
+      "english_term": "To go",
+      "native_term": "ಹೋಗಿ",
+      "transliteration": "Hogi"
+    },
+    {
+      "english_term": "To come",
+      "native_term": "ಬನ್ನಿ",
+      "transliteration": "Banni"
+    },
+    {
+      "english_term": "To eat",
+      "native_term": "ತಿನ್ನಿ",
+      "transliteration": "Thinni"
+    },
+    {
+      "english_term": "To drink",
+      "native_term": "ಕುಡಿಯಿರಿ",
+      "transliteration": "Kudiyiri"
+    },
+    {
+      "english_term": "To sleep",
+      "native_term": "ಮಲಗಿ",
+      "transliteration": "Malagi"
+    },
+    {
+      "english_term": "Friend",
+      "native_term": "ಸ್ನೇಹಿತ",
+      "transliteration": "Snehitha"
+    },
+    {
+      "english_term": "Mother",
+      "native_term": "ಅಮ್ಮ",
+      "transliteration": "Amma"
+    },
+    {
+      "english_term": "Father",
+      "native_term": "ಅಪ್ಪ",
+      "transliteration": "Appa"
+    },
+    {
+      "english_term": "Brother",
+      "native_term": "ಅಣ್ಣ / ತಮ್ಮ",
+      "transliteration": "Anna / Tamma"
+    },
+    {
+      "english_term": "Sister",
+      "native_term": "ಅಕ್ಕ / ತಂಗಿ",
+      "transliteration": "Akka / Tangi"
+    },
+    {
+      "english_term": "Name",
+      "native_term": "ಹೆಸರು",
+      "transliteration": "Hesaru"
+    },
+    {
+      "english_term": "Market",
+      "native_term": "Market / ಮಾರುಕಟ್ಟೆ",
+      "transliteration": "Market / Marukatte"
+    },
+    {
+      "english_term": "Police",
+      "native_term": "Police",
+      "transliteration": "Police"
+    },
+    {
+      "english_term": "Bathroom",
+      "native_term": "Bathroom",
+      "transliteration": "Bathroom"
+    },
+    {
+      "english_term": "Help",
+      "native_term": "ಸಹಾಯ",
+      "transliteration": "Sahaya"
+    }
+  ],
+  "phrases": [
+    {
+      "english_term": "How are you?",
+      "native_term": "ನೀವು ಹೇಗಿದ್ದೀರಾ?",
+      "transliteration": "Neevu hegiddira?"
+    },
+    {
+      "english_term": "I am fine.",
+      "native_term": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೀನಿ.",
+      "transliteration": "Naanu chennagiddini."
+    },
+    {
+      "english_term": "What is your name?",
+      "native_term": "ನಿಮ್ಮ ಹೆಸರೇನು?",
+      "transliteration": "Nimma hesarenu?"
+    },
+    {
+      "english_term": "My name is...",
+      "native_term": "ನನ್ನ ಹೆಸರು...",
+      "transliteration": "Nanna hesaru..."
+    },
+    {
+      "english_term": "How much is this?",
+      "native_term": "ಇದಕ್ಕೆ ಎಷ್ಟು?",
+      "transliteration": "Idakke eshtu?"
+    },
+    {
+      "english_term": "Where is the bathroom?",
+      "native_term": "Bathroom ಎಲ್ಲಿದೆ?",
+      "transliteration": "Bathroom ellide?"
+    },
+    {
+      "english_term": "I don't understand.",
+      "native_term": "ನನಗೆ ಅರ್ಥವಾಗಲಿಲ್ಲ.",
+      "transliteration": "Nanage arthavagalilla."
+    },
+    {
+      "english_term": "Do you speak English?",
+      "native_term": "ನೀವು English ಮಾತನಾಡುತ್ತೀರಾ?",
+      "transliteration": "Neevu English matanaduttira?"
+    },
+    {
+      "english_term": "Please help me.",
+      "native_term": "ದಯವಿಟ್ಟು ನನಗೆ ಸಹಾಯ ಮಾಡಿ.",
+      "transliteration": "Dayavittu nanage sahaya madi."
+    },
+    {
+      "english_term": "Excuse me / Listen.",
+      "native_term": "ಕ್ಷಮಿಸಿ / ಇಲ್ಲಿ ಕೇಳಿ.",
+      "transliteration": "Kshamisi / Illi keli."
+    },
+    {
+      "english_term": "Stop here.",
+      "native_term": "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ.",
+      "transliteration": "Illi nillisi."
+    },
+    {
+      "english_term": "I want water.",
+      "native_term": "ನನಗೆ ನೀರು ಬೇಕು.",
+      "transliteration": "Nanage neeru beku."
+    },
+    {
+      "english_term": "I am hungry.",
+      "native_term": "ನನಗೆ ಹಸಿವಾಗಿದೆ.",
+      "transliteration": "Nanage hasivagide."
+    },
+    {
+      "english_term": "It is very good.",
+      "native_term": "ಇದು ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ.",
+      "transliteration": "Idu tumba chennagide."
+    },
+    {
+      "english_term": "I need a taxi/auto.",
+      "native_term": "ನನಗೆ Auto ಬೇಕು.",
+      "transliteration": "Nanage Auto beku."
+    },
+    {
+      "english_term": "See you later.",
+      "native_term": "ಆಮೇಲೆ ಸಿಗೋಣ.",
+      "transliteration": "Amele sigona."
+    },
+    {
+      "english_term": "What time is it?",
+      "native_term": "Time ಎಷ್ಟಾಯ್ತು?",
+      "transliteration": "Time eshtaytu?"
+    },
+    {
+      "english_term": "Let's go.",
+      "native_term": "ಹೋಗೋಣ ಬನ್ನಿ.",
+      "transliteration": "Hogona banni."
+    },
+    {
+      "english_term": "Wait a minute.",
+      "native_term": "ಒಂದು ನಿಮಿಷ ಇರಿ.",
+      "transliteration": "Ondu nimisha iri."
+    },
+    {
+      "english_term": "Sorry.",
+      "native_term": "ಕ್ಷಮಿಸಿ.",
+      "transliteration": "Kshamisi."
+    }
+  ]
+}

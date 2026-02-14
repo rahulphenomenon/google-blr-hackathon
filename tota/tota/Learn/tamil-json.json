@@ -1,0 +1,366 @@
+{
+  "language": "Tamil",
+  "metadata": {
+    "total_words": 50,
+    "total_phrases": 20
+  },
+  "words": [
+    {
+      "english_term": "I",
+      "native_term": "நான்",
+      "transliteration": "Naan"
+    },
+    {
+      "english_term": "You (Formal)",
+      "native_term": "நீங்கள்",
+      "transliteration": "Neengal"
+    },
+    {
+      "english_term": "You (Informal)",
+      "native_term": "நீ",
+      "transliteration": "Nee"
+    },
+    {
+      "english_term": "Yes",
+      "native_term": "ஆம்",
+      "transliteration": "Aam"
+    },
+    {
+      "english_term": "No",
+      "native_term": "இல்லை",
+      "transliteration": "Illai"
+    },
+    {
+      "english_term": "Hello",
+      "native_term": "வணக்கம்",
+      "transliteration": "Vanakkam"
+    },
+    {
+      "english_term": "Water",
+      "native_term": "தண்ணீர்",
+      "transliteration": "Thanneer"
+    },
+    {
+      "english_term": "Food",
+      "native_term": "சாப்பாடு",
+      "transliteration": "Saapaadu"
+    },
+    {
+      "english_term": "Tea",
+      "native_term": "Tea",
+      "transliteration": "Tea"
+    },
+    {
+      "english_term": "Home",
+      "native_term": "வீடு",
+      "transliteration": "Veedu"
+    },
+    {
+      "english_term": "Shop",
+      "native_term": "கடை",
+      "transliteration": "Kadai"
+    },
+    {
+      "english_term": "Money",
+      "native_term": "பணம்",
+      "transliteration": "Panam"
+    },
+    {
+      "english_term": "Time",
+      "native_term": "நேரம்",
+      "transliteration": "Neram"
+    },
+    {
+      "english_term": "Today",
+      "native_term": "இன்று",
+      "transliteration": "Indru"
+    },
+    {
+      "english_term": "Tomorrow",
+      "native_term": "நாளை",
+      "transliteration": "Naalai"
+    },
+    {
+      "english_term": "Yesterday",
+      "native_term": "நேற்று",
+      "transliteration": "Netru"
+    },
+    {
+      "english_term": "Bus",
+      "native_term": "Bus",
+      "transliteration": "Bus"
+    },
+    {
+      "english_term": "Train",
+      "native_term": "Train",
+      "transliteration": "Train"
+    },
+    {
+      "english_term": "Ticket",
+      "native_term": "Ticket",
+      "transliteration": "Ticket"
+    },
+    {
+      "english_term": "Phone",
+      "native_term": "Phone",
+      "transliteration": "Phone"
+    },
+    {
+      "english_term": "Doctor",
+      "native_term": "Doctor",
+      "transliteration": "Doctor"
+    },
+    {
+      "english_term": "Here",
+      "native_term": "இங்கே",
+      "transliteration": "Inge"
+    },
+    {
+      "english_term": "There",
+      "native_term": "அங்கே",
+      "transliteration": "Ange"
+    },
+    {
+      "english_term": "Where",
+      "native_term": "எங்கே",
+      "transliteration": "Enge"
+    },
+    {
+      "english_term": "What",
+      "native_term": "என்ன",
+      "transliteration": "Enna"
+    },
+    {
+      "english_term": "Why",
+      "native_term": "ஏன்",
+      "transliteration": "Yen"
+    },
+    {
+      "english_term": "When",
+      "native_term": "எப்போது",
+      "transliteration": "Eppothu"
+    },
+    {
+      "english_term": "How",
+      "native_term": "எப்படி",
+      "transliteration": "Eppadi"
+    },
+    {
+      "english_term": "Who",
+      "native_term": "யார்",
+      "transliteration": "Yaar"
+    },
+    {
+      "english_term": "Good",
+      "native_term": "நல்ல",
+      "transliteration": "Nalla"
+    },
+    {
+      "english_term": "Bad",
+      "native_term": "கெட்ட",
+      "transliteration": "Ketta"
+    },
+    {
+      "english_term": "Big",
+      "native_term": "பெரிய",
+      "transliteration": "Periya"
+    },
+    {
+      "english_term": "Small",
+      "native_term": "சிறிய",
+      "transliteration": "Siriya"
+    },
+    {
+      "english_term": "Hot",
+      "native_term": "சூடான",
+      "transliteration": "Soodana"
+    },
+    {
+      "english_term": "Cold",
+      "native_term": "குளிர்",
+      "transliteration": "Kulir"
+    },
+    {
+      "english_term": "To stop",
+      "native_term": "நில்",
+      "transliteration": "Nil"
+    },
+    {
+      "english_term": "To go",
+      "native_term": "போ",
+      "transliteration": "Po"
+    },
+    {
+      "english_term": "To come",
+      "native_term": "வா",
+      "transliteration": "Vaa"
+    },
+    {
+      "english_term": "To eat",
+      "native_term": "சாப்பிடு",
+      "transliteration": "Saapidu"
+    },
+    {
+      "english_term": "To drink",
+      "native_term": "குடி",
+      "transliteration": "Kudi"
+    },
+    {
+      "english_term": "To sleep",
+      "native_term": "தூங்கு",
+      "transliteration": "Thoongu"
+    },
+    {
+      "english_term": "Friend",
+      "native_term": "நண்பன்",
+      "transliteration": "Nanban"
+    },
+    {
+      "english_term": "Mother",
+      "native_term": "அம்மா",
+      "transliteration": "Amma"
+    },
+    {
+      "english_term": "Father",
+      "native_term": "அப்பா",
+      "transliteration": "Appa"
+    },
+    {
+      "english_term": "Brother",
+      "native_term": "சகோதரன்",
+      "transliteration": "Sagotharan"
+    },
+    {
+      "english_term": "Sister",
+      "native_term": "சகோதரி",
+      "transliteration": "Sagothari"
+    },
+    {
+      "english_term": "Name",
+      "native_term": "பெயர்",
+      "transliteration": "Peyar"
+    },
+    {
+      "english_term": "Market",
+      "native_term": "Market",
+      "transliteration": "Market"
+    },
+    {
+      "english_term": "Police",
+      "native_term": "Police",
+      "transliteration": "Police"
+    },
+    {
+      "english_term": "Bathroom",
+      "native_term": "Bathroom",
+      "transliteration": "Bathroom"
+    },
+    {
+      "english_term": "Help",
+      "native_term": "உதவி",
+      "transliteration": "Udhavi"
+    }
+  ],
+  "phrases": [
+    {
+      "english_term": "How are you?",
+      "native_term": "நீங்கள் எப்படி இருக்கிறீர்கள்?",
+      "transliteration": "Neengal eppadi irukirargal?"
+    },
+    {
+      "english_term": "I am fine.",
+      "native_term": "நான் நன்றாக இருக்கிறேன்.",
+      "transliteration": "Naan nandragha irukiren."
+    },
+    {
+      "english_term": "What is your name?",
+      "native_term": "உங்கள் பெயர் என்ன?",
+      "transliteration": "Ungal peyar enna?"
+    },
+    {
+      "english_term": "My name is...",
+      "native_term": "என் பெயர்...",
+      "transliteration": "En peyar..."
+    },
+    {
+      "english_term": "How much is this?",
+      "native_term": "இது எவ்வளவு?",
+      "transliteration": "Idhu evvalavu?"
+    },
+    {
+      "english_term": "Where is the bathroom?",
+      "native_term": "Bathroom எங்கே இருக்கிறது?",
+      "transliteration": "Bathroom enge irukiradhu?"
+    },
+    {
+      "english_term": "I don't understand.",
+      "native_term": "எனக்கு புரியவில்லை.",
+      "transliteration": "Enakku puriyavillai."
+    },
+    {
+      "english_term": "Do you speak English?",
+      "native_term": "நீங்கள் English பேசுவீர்களா?",
+      "transliteration": "Neengal English pesuveergala?"
+    },
+    {
+      "english_term": "Please help me.",
+      "native_term": "தயவுசெய்து உதவுங்கள்.",
+      "transliteration": "Dayavuseidhu udhavungal."
+    },
+    {
+      "english_term": "Excuse me / Listen.",
+      "native_term": "மன்னிக்கவும்.",
+      "transliteration": "Mannikkavum."
+    },
+    {
+      "english_term": "Stop here.",
+      "native_term": "இங்கே நிறுத்துங்கள்.",
+      "transliteration": "Inge niruthungal."
+    },
+    {
+      "english_term": "I want water.",
+      "native_term": "எனக்கு தண்ணீர் வேண்டும்.",
+      "transliteration": "Enakku thanneer vendum."
+    },
+    {
+      "english_term": "I am hungry.",
+      "native_term": "எனக்கு பசிக்கிறது.",
+      "transliteration": "Enakku pasikkiradhu."
+    },
+    {
+      "english_term": "It is very good.",
+      "native_term": "இது மிகவும் நன்றாக உள்ளது.",
+      "transliteration": "Idhu migavum nandragha ulladhu."
+    },
+    {
+      "english_term": "I need a taxi/auto.",
+      "native_term": "எனக்கு Auto வேண்டும்.",
+      "transliteration": "Enakku Auto vendum."
+    },
+    {
+      "english_term": "See you later.",
+      "native_term": "பிறகு சந்திப்போம்.",
+      "transliteration": "Piragu sandhippom."
+    },
+    {
+      "english_term": "What time is it?",
+      "native_term": "மணி என்ன?",
+      "transliteration": "Mani enna?"
+    },
+    {
+      "english_term": "Let's go.",
+      "native_term": "போகலாம்.",
+      "transliteration": "Pogalam."
+    },
+    {
+      "english_term": "Wait a minute.",
+      "native_term": "ஒரு நிமிடம் இருங்கள்.",
+      "transliteration": "Oru nimidam irungal."
+    },
+    {
+      "english_term": "Sorry.",
+      "native_term": "மன்னிக்கவும்.",
+      "transliteration": "Mannikkavum."
+    }
+  ]
+}

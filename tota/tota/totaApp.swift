@@ -9,7 +9,7 @@ struct totaApp: App {
                     PracticeTab()
                 }
                 Tab("Learn", systemImage: "book.fill") {
-                    placeholderTab(icon: "book.fill", title: "Learn")
+                    LearnTab()
                 }
                 Tab("Today", systemImage: "calendar") {
                     placeholderTab(icon: "calendar", title: "Today")

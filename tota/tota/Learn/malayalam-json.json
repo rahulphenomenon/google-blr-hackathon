@@ -1,0 +1,361 @@
+{
+  "language": "Malayalam",
+  "metadata": {
+    "total_words": 50,
+    "total_phrases": 20
+  },
+  "words": [
+    {
+      "english_term": "I",
+      "native_term": "ഞാൻ",
+      "transliteration": "Njan"
+    },
+    {
+      "english_term": "You",
+      "native_term": "നിങ്ങൾ",
+      "transliteration": "Ningal"
+    },
+    {
+      "english_term": "Yes",
+      "native_term": "അതെ",
+      "transliteration": "Athey"
+    },
+    {
+      "english_term": "No",
+      "native_term": "ഇല്ല",
+      "transliteration": "Illa"
+    },
+    {
+      "english_term": "Hello",
+      "native_term": "നമസ്കാരം",
+      "transliteration": "Namaskaram"
+    },
+    {
+      "english_term": "Water",
+      "native_term": "വെള്ളം",
+      "transliteration": "Vellam"
+    },
+    {
+      "english_term": "Food",
+      "native_term": "ഭക്ഷണം",
+      "transliteration": "Bakshanam"
+    },
+    {
+      "english_term": "Tea",
+      "native_term": "ചായ",
+      "transliteration": "Chaaya"
+    },
+    {
+      "english_term": "Home",
+      "native_term": "വീട്",
+      "transliteration": "Veedu"
+    },
+    {
+      "english_term": "Shop",
+      "native_term": "കട",
+      "transliteration": "Kada"
+    },
+    {
+      "english_term": "Money",
+      "native_term": "പൈസ",
+      "transliteration": "Paisa"
+    },
+    {
+      "english_term": "Time",
+      "native_term": "സമയം",
+      "transliteration": "Samayam"
+    },
+    {
+      "english_term": "Today",
+      "native_term": "ഇന്ന്",
+      "transliteration": "Innu"
+    },
+    {
+      "english_term": "Tomorrow",
+      "native_term": "നാളെ",
+      "transliteration": "Naale"
+    },
+    {
+      "english_term": "Yesterday",
+      "native_term": "ഇന്നലെ",
+      "transliteration": "Innale"
+    },
+    {
+      "english_term": "Bus",
+      "native_term": "Bus",
+      "transliteration": "Bus"
+    },
+    {
+      "english_term": "Train",
+      "native_term": "Train",
+      "transliteration": "Train"
+    },
+    {
+      "english_term": "Ticket",
+      "native_term": "Ticket",
+      "transliteration": "Ticket"
+    },
+    {
+      "english_term": "Phone",
+      "native_term": "Phone",
+      "transliteration": "Phone"
+    },
+    {
+      "english_term": "Doctor",
+      "native_term": "Doctor",
+      "transliteration": "Doctor"
+    },
+    {
+      "english_term": "Here",
+      "native_term": "ഇവിടെ",
+      "transliteration": "Ivide"
+    },
+    {
+      "english_term": "There",
+      "native_term": "അവിടെ",
+      "transliteration": "Avide"
+    },
+    {
+      "english_term": "Where",
+      "native_term": "എവിടെ",
+      "transliteration": "Evide"
+    },
+    {
+      "english_term": "What",
+      "native_term": "എന്ത്",
+      "transliteration": "Enthu"
+    },
+    {
+      "english_term": "Why",
+      "native_term": "എന്തുകൊണ്ട്",
+      "transliteration": "Enthukondu"
+    },
+    {
+      "english_term": "When",
+      "native_term": "എപ്പോൾ",
+      "transliteration": "Eppol"
+    },
+    {
+      "english_term": "How",
+      "native_term": "എങ്ങനെ",
+      "transliteration": "Engane"
+    },
+    {
+      "english_term": "Who",
+      "native_term": "ആര്",
+      "transliteration": "Aaru"
+    },
+    {
+      "english_term": "Good",
+      "native_term": "നല്ല",
+      "transliteration": "Nalla"
+    },
+    {
+      "english_term": "Bad",
+      "native_term": "മോശം",
+      "transliteration": "Mosham"
+    },
+    {
+      "english_term": "Big",
+      "native_term": "വലിയ",
+      "transliteration": "Valiya"
+    },
+    {
+      "english_term": "Small",
+      "native_term": "ചെറിയ",
+      "transliteration": "Cheriya"
+    },
+    {
+      "english_term": "Hot",
+      "native_term": "ചൂട്",
+      "transliteration": "Choodu"
+    },
+    {
+      "english_term": "Cold",
+      "native_term": "തണുപ്പ്",
+      "transliteration": "Thanuppu"
+    },
+    {
+      "english_term": "To stop",
+      "native_term": "നിർത്തൂ",
+      "transliteration": "Nirthoo"
+    },
+    {
+      "english_term": "To go",
+      "native_term": "പോവുക",
+      "transliteration": "Povuka"
+    },
+    {
+      "english_term": "To come",
+      "native_term": "വരൂ",
+      "transliteration": "Varoo"
+    },
+    {
+      "english_term": "To eat",
+      "native_term": "കഴിക്കുക",
+      "transliteration": "Kazhikuka"
+    },
+    {
+      "english_term": "To drink",
+      "native_term": "കുടിക്കുക",
+      "transliteration": "Kudikkuka"
+    },
+    {
+      "english_term": "To sleep",
+      "native_term": "ഉറങ്ങുക",
+      "transliteration": "Uranguka"
+    },
+    {
+      "english_term": "Friend",
+      "native_term": "സുഹൃത്ത്",
+      "transliteration": "Suhirthu"
+    },
+    {
+      "english_term": "Mother",
+      "native_term": "അമ്മ",
+      "transliteration": "Amma"
+    },
+    {
+      "english_term": "Father",
+      "native_term": "അച്ഛൻ",
+      "transliteration": "Achan"
+    },
+    {
+      "english_term": "Brother",
+      "native_term": "ചേട്ടൻ / അനിയൻ",
+      "transliteration": "Chettan / Aniyan"
+    },
+    {
+      "english_term": "Sister",
+      "native_term": "ചേച്ചി / അനിയത്തി",
+      "transliteration": "Chechi / Aniyathi"
+    },
+    {
+      "english_term": "Name",
+      "native_term": "പേര്",
+      "transliteration": "Peru"
+    },
+    {
+      "english_term": "Market",
+      "native_term": "Market",
+      "transliteration": "Market"
+    },
+    {
+      "english_term": "Police",
+      "native_term": "Police",
+      "transliteration": "Police"
+    },
+    {
+      "english_term": "Bathroom",
+      "native_term": "Bathroom",
+      "transliteration": "Bathroom"
+    },
+    {
+      "english_term": "Help",
+      "native_term": "സഹായം",
+      "transliteration": "Sahayam"
+    }
+  ],
+  "phrases": [
+    {
+      "english_term": "How are you?",
+      "native_term": "സുഖമാണോ?",
+      "transliteration": "Sukhamaano?"
+    },
+    {
+      "english_term": "I am fine.",
+      "native_term": "എനിക്ക് സുഖമാണ്.",
+      "transliteration": "Enikku sukhamanu."
+    },
+    {
+      "english_term": "What is your name?",
+      "native_term": "പേര് എന്താണ്?",
+      "transliteration": "Peru enthaanu?"
+    },
+    {
+      "english_term": "My name is...",
+      "native_term": "എൻ്റെ പേര്... ആണ്.",
+      "transliteration": "Ente peru... aanu."
+    },
+    {
+      "english_term": "How much is this?",
+      "native_term": "ഇതിന് എത്രയാണ്?",
+      "transliteration": "Ithinu ethrayaanu?"
+    },
+    {
+      "english_term": "Where is the bathroom?",
+      "native_term": "Bathroom എവിടെയാണ്?",
+      "transliteration": "Bathroom evideyaanu?"
+    },
+    {
+      "english_term": "I don't understand.",
+      "native_term": "എനിക്ക് മനസ്സിലായില്ല.",
+      "transliteration": "Enikku manasilayilla."
+    },
+    {
+      "english_term": "Do you speak English?",
+      "native_term": "English സംസാരിക്കുമോ?",
+      "transliteration": "English samsarikkumo?"
+    },
+    {
+      "english_term": "Please help me.",
+      "native_term": "എന്നെ സഹായിക്കൂ.",
+      "transliteration": "Enne sahaayikku."
+    },
+    {
+      "english_term": "Excuse me / Listen.",
+      "native_term": "ഒന്ന് ശ്രദ്ധിക്കൂ.",
+      "transliteration": "Onnu shraddhikkoo."
+    },
+    {
+      "english_term": "Stop here.",
+      "native_term": "ഇവിടെ നിർത്തൂ.",
+      "transliteration": "Ivide nirthoo."
+    },
+    {
+      "english_term": "I want water.",
+      "native_term": "എനിക്ക് വെള്ളം വേണം.",
+      "transliteration": "Enikku vellam venam."
+    },
+    {
+      "english_term": "I am hungry.",
+      "native_term": "എനിക്ക് വിശക്കുന്നു.",
+      "transliteration": "Enikku vishakkunnu."
+    },
+    {
+      "english_term": "It is very good.",
+      "native_term": "നല്ല രുചിയുണ്ട്.",
+      "transliteration": "Nalla ruchiyundu."
+    },
+    {
+      "english_term": "I need a taxi/auto.",
+      "native_term": "എനിക്കൊരു Auto വേണം.",
+      "transliteration": "Enikku oru Auto venam."
+    },
+    {
+      "english_term": "See you later.",
+      "native_term": "പിന്നെ കാണാം.",
+      "transliteration": "Pinne kaanaam."
+    },
+    {
+      "english_term": "What time is it?",
+      "native_term": "സമയം എത്രയായി?",
+      "transliteration": "Samayam ethrayayi?"
+    },
+    {
+      "english_term": "Let's go.",
+      "native_term": "നമുക്ക് പോകാം.",
+      "transliteration": "Namukku pokaam."
+    },
+    {
+      "english_term": "Wait a minute.",
+      "native_term": "ഒരു മിനിറ്റ് നിൽക്കൂ.",
+      "transliteration": "Oru minute nilkku."
+    },
+    {
+      "english_term": "Sorry.",
+      "native_term": "ക്ഷമിക്കണം.",
+      "transliteration": "Kshamikkanam."
+    }
+  ]
+}
