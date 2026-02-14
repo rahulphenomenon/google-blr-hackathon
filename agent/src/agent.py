@@ -59,13 +59,13 @@ def _patch_sarvam_stt_for_mode(mode: str = "verbatim") -> None:
     sarvam_stt._build_websocket_url = _patched_build_url
 
 
-_patch_sarvam_stt_for_mode("verbatim")
+_patch_sarvam_stt_for_mode("codemix")
 
 
-def _make_stt() -> sarvam.STT:
-    """Create Sarvam STT with saaras:v3 in verbatim mode."""
+def _make_stt(language: str = "unknown") -> sarvam.STT:
+    """Create Sarvam STT with saaras:v3 in codemix mode."""
     stt = sarvam.STT(
-        language="unknown",
+        language=language,
         model="saaras:v3",
         flush_signal=True,
     )
@@ -119,7 +119,7 @@ async def entrypoint(ctx: agents.JobContext):
     logger.info(f"[CONFIG] language={language} scenario={scenario} voice={voice}")
 
     session = AgentSession(
-        stt=_make_stt(),
+        stt=_make_stt(language),
         llm=google.LLM(model="gemini-3-flash-preview"),
         tts=sarvam.TTS(
             target_language_code=language,
