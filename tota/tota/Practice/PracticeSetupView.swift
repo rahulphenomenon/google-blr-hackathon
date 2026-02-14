@@ -16,16 +16,16 @@ struct PracticeSetupView: View {
             .padding(.horizontal, 20)
             .padding(.vertical, 24)
         }
-        .background(Color(.systemBackground))
+        .scrollIndicators(.hidden)
     }
 
     // MARK: - Header
 
     private func header() -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text("practice")
+        VStack(alignment: .leading, spacing: 6) {
+            Text("Practice")
                 .font(.largeTitle.weight(.bold))
-            Text("pick a language, scenario, and voice")
+            Text("Pick a language, scenario, and voice")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
         }
@@ -35,16 +35,17 @@ struct PracticeSetupView: View {
 
     private func languagePicker() -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("language")
+            Text("Language")
                 .font(.headline)
 
-            ScrollView(.horizontal, showsIndicators: false) {
+            ScrollView(.horizontal) {
                 HStack(spacing: 10) {
                     ForEach(PracticeData.languages) { language in
                         languageChip(language)
                     }
                 }
             }
+            .scrollIndicators(.hidden)
         }
     }
 
@@ -53,16 +54,17 @@ struct PracticeSetupView: View {
         return Button {
             viewModel.selectedLanguage = language
         } label: {
-            VStack(spacing: 2) {
+            VStack(spacing: 4) {
                 Text(language.nativeName)
                     .font(.title3.weight(.semibold))
                 Text(language.name)
                     .font(.caption)
+                    .foregroundStyle(isSelected ? .white.opacity(0.7) : .secondary)
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 10)
-            .background(isSelected ? Theme.brand : Color(.secondarySystemBackground))
+            .padding(.horizontal, 18)
+            .padding(.vertical, 12)
             .foregroundStyle(isSelected ? .white : .primary)
+            .background(isSelected ? Color(.label) : Color(.secondarySystemBackground))
             .clipShape(.rect(cornerRadius: 12))
         }
     }
@@ -71,7 +73,7 @@ struct PracticeSetupView: View {
 
     private func scenarioList() -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("scenario")
+            Text("Scenario")
                 .font(.headline)
 
             LazyVStack(spacing: 8) {
@@ -91,42 +93,81 @@ struct PracticeSetupView: View {
                 Image(systemName: scenario.icon)
                     .font(.title3)
                     .frame(width: 28)
-                    .foregroundStyle(isSelected ? Theme.brand : .secondary)
+                    .foregroundStyle(isSelected ? .white : .secondary)
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(scenario.name)
                         .font(.body.weight(.medium))
                     Text(scenario.description)
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(isSelected ? .white.opacity(0.7) : .secondary)
                 }
 
                 Spacer()
+
+                if isSelected {
+                    Image(systemName: "checkmark")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(isSelected ? .white : .secondary)
+                }
             }
             .padding(14)
-            .background(Color(.secondarySystemBackground))
+            .foregroundStyle(isSelected ? .white : .primary)
+            .background(isSelected ? Color(.label) : Color(.secondarySystemBackground))
             .clipShape(.rect(cornerRadius: 12))
-            .overlay(
-                RoundedRectangle(cornerRadius: 12)
-                    .strokeBorder(isSelected ? Theme.brand : .clear, lineWidth: 2)
-            )
         }
-        .foregroundStyle(.primary)
     }
 
     // MARK: - Voice Picker
 
     private func voicePicker() -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("voice")
+            Text("Voice")
                 .font(.headline)
 
-            Picker("voice", selection: $viewModel.selectedVoice) {
-                ForEach(PracticeData.voices) { voice in
-                    Text(voice.name)
-                        .tag(voice)
+            ScrollView(.horizontal) {
+                HStack(spacing: 12) {
+                    ForEach(PracticeData.voices) { voice in
+                        voiceCard(voice)
+                    }
                 }
             }
+            .scrollIndicators(.hidden)
+        }
+    }
+
+    private func voiceCard(_ voice: Voice) -> some View {
+        let isSelected = viewModel.selectedVoice == voice
+        return Button {
+            viewModel.selectedVoice = voice
+        } label: {
+            VStack(spacing: 0) {
+                Image(voice.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 140, height: 120)
+                    .clipped()
+
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(voice.name)
+                        .font(.subheadline.weight(.semibold))
+                    Text(voice.personality)
+                        .font(.caption2)
+                        .foregroundStyle(isSelected ? .white.opacity(0.7) : .secondary)
+                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(12)
+            }
+            .frame(width: 140)
+            .foregroundStyle(isSelected ? .white : .primary)
+            .background(isSelected ? Color(.label) : Color(.secondarySystemBackground))
+            .clipShape(.rect(cornerRadius: 14))
+            .overlay(
+                RoundedRectangle(cornerRadius: 14)
+                    .strokeBorder(isSelected ? Color(.label) : .clear, lineWidth: 2)
+            )
         }
     }
 
@@ -136,17 +177,20 @@ struct PracticeSetupView: View {
         AsyncButton {
             await viewModel.startSession()
         } label: {
-            Text("start practicing")
+            Text("Start Practicing")
                 .font(.headline)
+                .foregroundStyle(Color(.systemBackground))
                 .frame(maxWidth: .infinity)
-                .frame(height: 50)
+                .frame(height: 52)
         } busyLabel: {
             ProgressView()
+                .tint(Color(.systemBackground))
                 .frame(maxWidth: .infinity)
-                .frame(height: 50)
+                .frame(height: 52)
         }
         .buttonStyle(.borderedProminent)
-        .tint(Theme.brand)
+        .tint(Color(.label))
+        .clipShape(.rect(cornerRadius: 14))
         .padding(.top, 8)
     }
 }

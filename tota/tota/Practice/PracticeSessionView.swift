@@ -6,12 +6,14 @@ struct PracticeSessionView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            AgentVisualizerView()
-            TranscriptView()
-            SessionControlBar {
+            PracticeVisualizerView()
+                .padding(.top, 8)
+
+            PracticeTranscriptView()
+
+            PracticeControlBar {
                 viewModel.endSession()
             }
         }
-        .background(Color(.systemBackground))
     }
 }

@@ -17,6 +17,8 @@ struct Voice: Identifiable, Hashable {
     let id: String
     let name: String
     let gender: Gender
+    let personality: String
+    let imageName: String
 
     enum Gender: String {
         case female, male
@@ -42,9 +44,9 @@ enum PracticeData {
     ]
 
     static let voices: [Voice] = [
-        Voice(id: "kavya", name: "kavya", gender: .female),
-        Voice(id: "priya", name: "priya", gender: .female),
-        Voice(id: "rohan", name: "rohan", gender: .male),
-        Voice(id: "aditya", name: "aditya", gender: .male),
+        Voice(id: "kavya", name: "kavya", gender: .female, personality: "Warm and encouraging, like a patient older sister", imageName: "voice-kavya"),
+        Voice(id: "priya", name: "priya", gender: .female, personality: "Energetic and fun, keeps the conversation lively", imageName: "voice-priya"),
+        Voice(id: "rohan", name: "rohan", gender: .male, personality: "Calm and thoughtful, explains things clearly", imageName: "voice-rohan"),
+        Voice(id: "aditya", name: "aditya", gender: .male, personality: "Friendly and casual, like chatting with a buddy", imageName: "voice-aditya"),
     ]
 }

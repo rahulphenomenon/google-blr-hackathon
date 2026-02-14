@@ -5,20 +5,32 @@ struct totaApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                Tab("practice", systemImage: "mic.fill") {
+                Tab("Practice", systemImage: "mic.fill") {
                     PracticeTab()
                 }
-                Tab("learn", systemImage: "book.fill") {
-                    Text("coming soon")
+                Tab("Learn", systemImage: "book.fill") {
+                    placeholderTab(icon: "book.fill", title: "Learn")
                 }
-                Tab("today", systemImage: "calendar") {
-                    Text("coming soon")
+                Tab("Today", systemImage: "calendar") {
+                    placeholderTab(icon: "calendar", title: "Today")
                 }
-                Tab("stats", systemImage: "chart.bar.fill") {
-                    Text("coming soon")
+                Tab("Stats", systemImage: "chart.bar.fill") {
+                    placeholderTab(icon: "chart.bar.fill", title: "Stats")
                 }
             }
             .tint(Theme.brand)
         }
+    }
+
+    private func placeholderTab(icon: String, title: String) -> some View {
+        VStack(spacing: 12) {
+            Image(systemName: icon)
+                .font(.system(size: 40, weight: .light))
+                .foregroundStyle(.tertiary)
+            Text("Coming Soon")
+                .font(.title3.weight(.medium))
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

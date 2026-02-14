@@ -21,18 +21,18 @@ struct PracticeTab: View {
                 }
             }
         }
-        .animation(.default, value: viewModel.state)
+        .animation(.smooth, value: viewModel.state)
     }
 
     private func connectingView() -> some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 20) {
             ProgressView()
                 .controlSize(.large)
-            Text("connecting...")
-                .font(.subheadline)
+                .tint(Color(.label))
+            Text("Connecting...")
+                .font(.body.weight(.medium))
                 .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemBackground))
     }
 }
