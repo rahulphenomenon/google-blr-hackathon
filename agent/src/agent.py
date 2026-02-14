@@ -46,17 +46,49 @@ Rules:
         )
 
 
+def _patch_sarvam_stt_for_mode(mode: str = "verbatim") -> None:
+    """Patch the Sarvam STT plugin to support mode= on saaras:v3.
+
+    The released plugin routes saaras:v3 to the translate endpoint and
+    doesn't pass a mode parameter. This patches the URL builder to use
+    the transcription endpoint with the specified mode.
+    """
+    import livekit.plugins.sarvam.stt as sarvam_stt
+
+    _original_build_url = sarvam_stt._build_websocket_url
+
+    def _patched_build_url(base_url, opts):
+        url = _original_build_url(base_url, opts)
+        if opts.model == "saaras:v3":
+            url += f"&mode={mode}"
+        return url
+
+    sarvam_stt._build_websocket_url = _patched_build_url
+
+
+_patch_sarvam_stt_for_mode("verbatim")
+
+
+def _make_stt() -> sarvam.STT:
+    """Create Sarvam STT with saaras:v3 in verbatim mode."""
+    stt = sarvam.STT(
+        language="unknown",
+        model="saaras:v3",
+        flush_signal=True,
+    )
+    # Force the transcription endpoint (not translate)
+    stt._opts.streaming_url = "wss://api.sarvam.ai/speech-to-text/ws"
+    stt._opts.base_url = "https://api.sarvam.ai/speech-to-text"
+    return stt
+
+
 server = AgentServer()
 
 
 @server.rtc_session()
 async def entrypoint(ctx: agents.JobContext):
     session = AgentSession(
-        stt=sarvam.STT(
-            language="unknown",
-            model="saaras:v3",
-            flush_signal=True,
-        ),
+        stt=_make_stt(),
         llm=google.LLM(
             model="gemini-3-flash-preview",
         ),

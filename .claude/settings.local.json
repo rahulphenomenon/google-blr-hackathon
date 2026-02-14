@@ -13,7 +13,8 @@
       "mcp__livekit-docs__code_search",
       "mcp__livekit-docs:*",
       "mcp__livekit-docs__get_python_agent_example",
-      "Bash(xcodebuild:*)"
+      "Bash(xcodebuild:*)",
+      "Bash(.venv/bin/python:*)"
     ]
   }
 }
