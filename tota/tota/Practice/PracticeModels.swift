@@ -18,7 +18,6 @@ struct Voice: Identifiable, Hashable {
     let name: String
     let gender: Gender
     let personality: String
-    let imageName: String
 
     enum Gender: String {
         case female, male
@@ -27,11 +26,29 @@ struct Voice: Identifiable, Hashable {
 
 enum PracticeData {
     static let languages: [Language] = [
-        Language(id: "ml-IN", name: "malayalam", nativeName: "മലയാളം"),
-        Language(id: "kn-IN", name: "kannada", nativeName: "ಕನ್ನಡ"),
         Language(id: "hi-IN", name: "hindi", nativeName: "हिन्दी"),
+        Language(id: "bn-IN", name: "bengali", nativeName: "বাংলা"),
+        Language(id: "kn-IN", name: "kannada", nativeName: "ಕನ್ನಡ"),
+        Language(id: "ml-IN", name: "malayalam", nativeName: "മലയാളം"),
+        Language(id: "mr-IN", name: "marathi", nativeName: "मराठी"),
+        Language(id: "od-IN", name: "odia", nativeName: "ଓଡ଼ିଆ"),
+        Language(id: "pa-IN", name: "punjabi", nativeName: "ਪੰਜਾਬੀ"),
         Language(id: "ta-IN", name: "tamil", nativeName: "தமிழ்"),
         Language(id: "te-IN", name: "telugu", nativeName: "తెలుగు"),
+        Language(id: "en-IN", name: "english", nativeName: "English"),
+        Language(id: "gu-IN", name: "gujarati", nativeName: "ગુજરાતી"),
+        Language(id: "as-IN", name: "assamese", nativeName: "অসমীয়া"),
+        Language(id: "ur-IN", name: "urdu", nativeName: "اردو"),
+        Language(id: "ne-IN", name: "nepali", nativeName: "नेपाली"),
+        Language(id: "kok-IN", name: "konkani", nativeName: "कोंकणी"),
+        Language(id: "ks-IN", name: "kashmiri", nativeName: "कॉशुर"),
+        Language(id: "sd-IN", name: "sindhi", nativeName: "سنڌي"),
+        Language(id: "sa-IN", name: "sanskrit", nativeName: "संस्कृतम्"),
+        Language(id: "sat-IN", name: "santali", nativeName: "ᱥᱟᱱᱛᱟᱲᱤ"),
+        Language(id: "mni-IN", name: "manipuri", nativeName: "মৈতৈলোন্"),
+        Language(id: "brx-IN", name: "bodo", nativeName: "बड़ो"),
+        Language(id: "mai-IN", name: "maithili", nativeName: "मैथिली"),
+        Language(id: "doi-IN", name: "dogri", nativeName: "डोगरी"),
     ]
 
     static let scenarios: [Scenario] = [
@@ -44,9 +61,9 @@ enum PracticeData {
     ]
 
     static let voices: [Voice] = [
-        Voice(id: "kavya", name: "kavya", gender: .female, personality: "Warm and encouraging, like a patient older sister", imageName: "voice-kavya"),
-        Voice(id: "priya", name: "priya", gender: .female, personality: "Energetic and fun, keeps the conversation lively", imageName: "voice-priya"),
-        Voice(id: "rohan", name: "rohan", gender: .male, personality: "Calm and thoughtful, explains things clearly", imageName: "voice-rohan"),
-        Voice(id: "aditya", name: "aditya", gender: .male, personality: "Friendly and casual, like chatting with a buddy", imageName: "voice-aditya"),
+        Voice(id: "kavya", name: "kavya", gender: .female, personality: "Patient and encouraging"),
+        Voice(id: "priya", name: "priya", gender: .female, personality: "Energetic and fun"),
+        Voice(id: "rohan", name: "rohan", gender: .male, personality: "Calm and clear"),
+        Voice(id: "aditya", name: "aditya", gender: .male, personality: "Friendly and casual"),
     ]
 }

@@ -141,33 +141,19 @@ struct PracticeSetupView: View {
         return Button {
             viewModel.selectedVoice = voice
         } label: {
-            VStack(spacing: 0) {
-                Image(voice.imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 140, height: 120)
-                    .clipped()
-
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(voice.name)
-                        .font(.subheadline.weight(.semibold))
-                    Text(voice.personality)
-                        .font(.caption2)
-                        .foregroundStyle(isSelected ? .white.opacity(0.7) : .secondary)
-                        .lineLimit(2)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(12)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(voice.name)
+                    .font(.subheadline.weight(.semibold))
+                Text(voice.personality)
+                    .font(.caption)
+                    .foregroundStyle(isSelected ? .white.opacity(0.7) : .secondary)
+                    .lineLimit(1)
             }
-            .frame(width: 140)
+            .padding(14)
+            .frame(width: 150, alignment: .leading)
             .foregroundStyle(isSelected ? .white : .primary)
             .background(isSelected ? Color(.label) : Color(.secondarySystemBackground))
-            .clipShape(.rect(cornerRadius: 14))
-            .overlay(
-                RoundedRectangle(cornerRadius: 14)
-                    .strokeBorder(isSelected ? Color(.label) : .clear, lineWidth: 2)
-            )
+            .clipShape(.rect(cornerRadius: 12))
         }
     }
 
