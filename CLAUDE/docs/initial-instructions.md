@@ -28,7 +28,7 @@ i am about to start a hackathon. the project i want to build is an ios app that 
 - order of operations
     - first i want to get a poc working. this will be getting a livekit agent working with sarvam and gemini. you can reference this and basically just implement it - [https://github.com/livekit-examples/agent-starter-swift](https://github.com/livekit-examples/agent-starter-swift), this will ensure we have things configured correctly. once this is setup we can build the actual app from scratch
     - write a full fleshed spec with learnings from poc
-    - once the poc is built build the “practice” functionality since that is closest in functionality to the poc
+    - once the poc is built build the “practice” functionality since that is closest in functionality to the poc. do for malayalam, kannada, and hindi 
     - then get lessons functional. this will require preparing the content and building the functionality
     - then get today tab functional
     - then settings

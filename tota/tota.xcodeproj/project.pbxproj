@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6937126E2F405A5900B90AD6 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6937126D2F405A5900B90AD6 /* LiveKit */; };
+		693712712F405A9D00B90AD6 /* LiveKitComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 693712702F405A9D00B90AD6 /* LiveKitComponents */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		696FD6482F403C7700676FB6 /* tota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		693712732F405AFC00B90AD6 /* Exceptions for "tota" folder in "tota" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 696FD6472F403C7700676FB6 /* tota */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		696FD64A2F403C7700676FB6 /* tota */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				693712732F405AFC00B90AD6 /* Exceptions for "tota" folder in "tota" target */,
+			);
 			path = tota;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6937126E2F405A5900B90AD6 /* LiveKit in Frameworks */,
+				693712712F405A9D00B90AD6 /* LiveKitComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = tota;
 			packageProductDependencies = (
+				6937126D2F405A5900B90AD6 /* LiveKit */,
+				693712702F405A9D00B90AD6 /* LiveKitComponents */,
 			);
 			productName = tota;
 			productReference = 696FD6482F403C7700676FB6 /* tota.app */;
@@ -94,6 +116,10 @@
 			);
 			mainGroup = 696FD63F2F403C7700676FB6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6937126C2F405A5900B90AD6 /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+				6937126F2F405A9D00B90AD6 /* XCRemoteSwiftPackageReference "components-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 696FD6492F403C7700676FB6 /* Products */;
 			projectDirPath = "";
@@ -127,6 +153,8 @@
 /* Begin XCBuildConfiguration section */
 		696FD6512F403C7800676FB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 696FD64A2F403C7700676FB6 /* tota */;
+			baseConfigurationReferenceRelativePath = tota.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -191,6 +219,8 @@
 		};
 		696FD6522F403C7800676FB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 696FD64A2F403C7700676FB6 /* tota */;
+			baseConfigurationReferenceRelativePath = tota.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -256,6 +286,8 @@
 				DEVELOPMENT_TEAM = QAVH65GP8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tota/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "tota needs your microphone to help you practice speaking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +320,8 @@
 				DEVELOPMENT_TEAM = QAVH65GP8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tota/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "tota needs your microphone to help you practice speaking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +366,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6937126C2F405A5900B90AD6 /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.12.0;
+			};
+		};
+		6937126F2F405A9D00B90AD6 /* XCRemoteSwiftPackageReference "components-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/components-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6937126D2F405A5900B90AD6 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6937126C2F405A5900B90AD6 /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		693712702F405A9D00B90AD6 /* LiveKitComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6937126F2F405A9D00B90AD6 /* XCRemoteSwiftPackageReference "components-swift" */;
+			productName = LiveKitComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 696FD6402F403C7700676FB6 /* Project object */;
 }

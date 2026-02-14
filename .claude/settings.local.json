@@ -6,7 +6,13 @@
       "WebFetch(domain:docs.sarvam.ai)",
       "WebFetch(domain:docs.livekit.io)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "mcp__livekit-docs__docs_search",
+      "mcp__livekit-docs__get_changelog",
+      "mcp__livekit-docs__get_pages",
+      "mcp__livekit-docs__code_search",
+      "mcp__livekit-docs:*",
+      "mcp__livekit-docs__get_python_agent_example"
     ]
   }
 }
