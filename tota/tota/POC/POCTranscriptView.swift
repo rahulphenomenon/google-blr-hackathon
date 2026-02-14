@@ -5,15 +5,18 @@ struct POCTranscriptView: View {
     @EnvironmentObject private var session: Session
 
     var body: some View {
-        ChatScrollView { message in
-            switch message.content {
-            case let .userTranscript(text), let .userInput(text):
-                userBubble(text)
-            case let .agentTranscript(text):
-                agentBubble(text)
-            }
+        ChatScrollView(messageBuilder: messageBubble)
+            .padding(.horizontal)
+    }
+
+    @ViewBuilder
+    private func messageBubble(_ message: ReceivedMessage) -> some View {
+        switch message.content {
+        case let .userTranscript(text), let .userInput(text):
+            userBubble(text)
+        case let .agentTranscript(text):
+            agentBubble(text)
         }
-        .padding(.horizontal)
     }
 
     private func userBubble(_ text: String) -> some View {
